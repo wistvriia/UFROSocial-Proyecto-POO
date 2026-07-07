@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head th:replace="~{fragments/layout :: head('Editar perfil')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: navbar}"></header>
+
+<main class="container">
+    <section class="card">
+        <h2>Editar perfil</h2>
+
+        <div class="alert alert-error" th:if="${error}" th:text="${error}"></div>
+
+        <form th:action="@{/perfil/editar}" th:object="${editarPerfilForm}"
+              method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nombreCompleto">Nombre completo</label>
+                <input type="text" id="nombreCompleto" th:field="*{nombreCompleto}" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" th:field="*{username}" required>
+            </div>
+            <div class="form-group">
+                <label for="carrera">Carrera</label>
+                <select id="carrera" th:field="*{carrera}">
+                    <option th:value="${null}">-- Selecciona tu carrera --</option>
+                    <option th:each="c : ${carreras}"
+                            th:value="${c.name()}" th:text="${c.nombreLegible}">Carrera</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="biografia">Biografía</label>
+                <textarea id="biografia" th:field="*{biografia}"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Foto de perfil</label>
+                <input type="file" name="foto" accept="image/*">
+                <div class="hint">El correo institucional no se puede modificar.</div>
+            </div>
+            <button type="submit" class="btn btn-primario">Guardar cambios</button>
+            <a class="btn" th:href="@{/}">Cancelar</a>
+        </form>
+    </section>
+</main>
+</body>
+</html>
