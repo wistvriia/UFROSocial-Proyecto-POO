@@ -1,8 +1,8 @@
-package cl.ufro.redsocial.service;
+package ufro.redsocial.service;
 
-import cl.ufro.redsocial.dto.CambioPasswordForm;
-import cl.ufro.redsocial.dto.EditarPerfilForm;
-import cl.ufro.redsocial.model.Usuario;
+import ufro.redsocial.dto.CambioPasswordForm;
+import ufro.redsocial.dto.EditarPerfilForm;
+import ufro.redsocial.model.Usuario;
 
 import java.util.List;
 
