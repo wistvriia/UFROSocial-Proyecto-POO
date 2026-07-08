@@ -1,11 +1,11 @@
-package cl.ufro.redsocial.service;
+package ufro.redsocial.service;
 
-import cl.ufro.redsocial.dto.PublicacionForm;
-import cl.ufro.redsocial.model.Comentario;
-import cl.ufro.redsocial.model.Publicacion;
-import cl.ufro.redsocial.model.Respuesta;
-import cl.ufro.redsocial.model.enums.Carrera;
-import cl.ufro.redsocial.model.enums.TipoReaccion;
+import ufro.redsocial.dto.PublicacionForm;
+import ufro.redsocial.model.Comentario;
+import ufro.redsocial.model.Publicacion;
+import ufro.redsocial.model.Respuesta;
+import ufro.redsocial.model.enums.Carrera;
+import ufro.redsocial.model.enums.TipoReaccion;
 
 import java.util.List;
 
