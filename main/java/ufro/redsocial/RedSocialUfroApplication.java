@@ -1,4 +1,4 @@
-package cl.ufro.redsocial;
+package ufro.redsocial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
