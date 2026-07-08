@@ -1,4 +1,4 @@
-package cl.ufro.redsocial.exception;
+package ufro.redsocial.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.Model;
