@@ -1,7 +1,7 @@
-package cl.ufro.redsocial.service;
+package ufro.redsocial.service;
 
-import cl.ufro.redsocial.dto.RegistroForm;
-import cl.ufro.redsocial.model.Usuario;
+import ufro.redsocial.dto.RegistroForm;
+import ufro.redsocial.model.Usuario;
 
 public interface AuthService {
     Usuario registrar(RegistroForm form);
