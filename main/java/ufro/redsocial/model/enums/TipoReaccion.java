@@ -1,4 +1,4 @@
-package cl.ufro.redsocial.model.enums;
+package ufro.redsocial.model.enums;
 
 public enum TipoReaccion {
     LIKE("Me gusta", "👍"),
