@@ -1,6 +1,6 @@
-package cl.ufro.redsocial.service.impl;
+package ufro.redsocial.service.impl;
 
-import cl.ufro.redsocial.service.AlmacenamientoArchivoService;
+import ufro.redsocial.service.AlmacenamientoArchivoService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
