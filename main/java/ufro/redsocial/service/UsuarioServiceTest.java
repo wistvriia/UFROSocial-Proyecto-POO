@@ -1,13 +1,13 @@
-package cl.ufro.redsocial.service;
+package ufro.redsocial.service;
 
-import cl.ufro.redsocial.dto.CambioPasswordForm;
-import cl.ufro.redsocial.exception.ContrasenaActualIncorrectaException;
-import cl.ufro.redsocial.model.Usuario;
-import cl.ufro.redsocial.model.enums.Carrera;
-import cl.ufro.redsocial.repository.UsuarioRepository;
-import cl.ufro.redsocial.seguridad.CifradorBCrypt;
-import cl.ufro.redsocial.seguridad.CifradorContrasena;
-import cl.ufro.redsocial.service.impl.UsuarioServiceImpl;
+import ufro.redsocial.dto.CambioPasswordForm;
+import ufro.redsocial.exception.ContrasenaActualIncorrectaException;
+import ufro.redsocial.model.Usuario;
+import ufro.redsocial.model.enums.Carrera;
+import ufro.redsocial.repository.UsuarioRepository;
+import ufro.redsocial.seguridad.CifradorBCrypt;
+import ufro.redsocial.seguridad.CifradorContrasena;
+import ufro.redsocial.service.impl.UsuarioServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
